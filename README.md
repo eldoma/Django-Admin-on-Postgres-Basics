@@ -1,6 +1,6 @@
 # Django-Admin-on-Postgres-Basics
 
-## Start local Postgres server in VS Code or IBM Cloud
+## Runnable in local Postgres server in VS Code or in IBM Cloud
 ### Once PostgreSQL is started, check the server connection information in the terminal. Need to save the connection information such as generated username, password, and host, etc, which will be used to configure Django app to connect to this database.
 
 - pip install --upgrade distro-info
@@ -8,7 +8,7 @@
 
 - pip install Django
 
-### Install the Psyopg adapter:
+### Install the Psycopg adapter:
 - python -m pip install psycopg2-binary==2.9.7 --user
 
 ### Obtain the Code
@@ -22,9 +22,19 @@ wget -O Downloads/lab2_template.zip "https:____/IBM-CD0251EN-SkillsNetwork/labs/
 - pip install -r requirements.txt
 
 ### Perform Migrations to create Necessary Tables
+- python manage.py makemigrations
+### Migrations on IBM Cloud
+![migrations](https://github.com/eldoma/Django-Admin-on-Postgres-Basics/blob/main/Migrations%20for%20Adminsite%20Theia.jpg)
 
-- python manage.py makemigrations    
+### Migrations on Visual Studio
+![migrations](https://github.com/eldoma/Django-Admin-on-Postgres-Basics/blob/main/Migrations%20for%20adminsite%20VSCode.jpg)
+    
 - python manage.py migrate
+### Migrated on IBM Cloud
+![Migrated](https://github.com/eldoma/Django-Admin-on-Postgres-Basics/blob/main/Running%20Migrations%20Theia.jpg)
+
+### Migrated on Visual Studio
+![Migrated](https://github.com/eldoma/Django-Admin-on-Postgres-Basics/blob/main/Running%20Migrations%20VSCode.jpg)
 
 # Test the Django connection
 http://127.0.0.1:8000
