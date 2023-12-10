@@ -36,5 +36,5 @@ http://127.0.0.1:8000
 
 ## Launch the application on /admin
 http://127.0.0.1:8000/admin
-Should be showing this Admin page
+#### Should be showing this Admin page
 ![Admin](https://github.com/eldoma/Django-Admin-on-Postgres-Basics/blob/main/Django%20Admin.jpg)
